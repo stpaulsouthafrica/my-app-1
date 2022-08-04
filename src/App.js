@@ -80,6 +80,7 @@ const Navbar = {
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
 
+    
     // 40em == 640px
     @media only screen and (max-width: 40em) {
       position: fixed;
@@ -114,7 +115,7 @@ const Navbar = {
 
       transition: 0.2s ease-out;
 
-      
+
       transform: ${({ openDrawer }) =>
         openDrawer ? `translateX(0)` : `translateX(100%)`};
     }
