@@ -114,7 +114,6 @@ const Navbar = {
 
       transition: 0.2s ease-out;
 
-      
       transform: ${({ openDrawer }) =>
         openDrawer ? `translateX(0)` : `translateX(100%)`};
     }
