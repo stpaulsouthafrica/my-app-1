@@ -42,11 +42,11 @@ function App() {
         <HamburgerButton.Wrapper onClick={() => toggleDrawer(true)}>
           <HamburgerButton.Lines />
         </HamburgerButton.Wrapper>
-
+ 
         <Navbar.Items ref={drawerRef} openDrawer={openDrawer}>
           <Navbar.Item>Home</Navbar.Item>
-          <Navbar.Item>Blog</Navbar.Item>
-          <Navbar.Item>About</Navbar.Item>
+          <Navbar.Item>Shop Pens</Navbar.Item>
+          <Navbar.Item>Shop Watches</Navbar.Item>
         </Navbar.Items>
 
       </Navbar.Wrapper>
@@ -65,9 +65,6 @@ const Styles = {
   `
 };
 
-
-
-
 const Navbar = {
   Wrapper: styled.nav`
     flex: 1;
@@ -80,7 +77,8 @@ const Navbar = {
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
 
-    
+
+
     // 40em == 640px
     @media only screen and (max-width: 40em) {
       position: fixed;
@@ -94,6 +92,7 @@ const Navbar = {
     padding: 0.5rem 1rem;
     color: white;
     text-shadow: .05em .05em 0 rgb(0,0,0);
+    font-family: 'Satisfy', cursive;
   `,
 
 
